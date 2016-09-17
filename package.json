@@ -1,0 +1,19 @@
+{
+  "name": "node-typescript-backend-project",
+  "version": "1.0.0",
+  "description": "Node Backend based on TS and WebPack minimize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./bin/build.js"
+  },
+  "author": "FelipeBarrosCruz<felipe.barros.pt@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^2.0.0",
+    "colors": "^1.1.2"
+  },
+  "dependencies": {
+    "hapi": "^15.0.3"
+  }
+}
