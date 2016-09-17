@@ -1,4 +1,4 @@
 module.exports = {
-  Host: 'fsociety.debug',
+  Host: 'localhost',
   Port: '8000'
 };
