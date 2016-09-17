@@ -10,7 +10,8 @@
 const Application = (onStart, onFinish) => {
   const Hapi          = require('hapi');
   const Server        = new Hapi.Server();
-  const Configuration = onStart();
+  const AppLoader     = require('./AppLoader');
+  const Configuration = onStart(AppLoader);
 
   Server.connection({
     host: Configuration.Host,
