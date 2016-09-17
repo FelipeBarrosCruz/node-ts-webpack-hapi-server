@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha tests --timeout 360000 --reporter spec",
     "build": "node ./bin/build.js"
   },
   "author": "FelipeBarrosCruz<felipe.barros.pt@gmail.com>",
