@@ -8,8 +8,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node index.js",
-    "test": "./node_modules/.bin/mocha tests --timeout 360000 --reporter spec",
-    "build": "node ./bin/build.js"
+    "test": "./node_modules/.bin/mocha test --timeout 360000 --reporter spec",
+    "build": "node ./bin/build.js",
+    "documentation": "./node_modules/.bin/apidoc -i ./app"
   },
   "repository": {
     "type": "git",
