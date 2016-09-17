@@ -10,7 +10,7 @@ Tasks.push((doNext) => {
         if (err) {
             return doNext(err);
         }
-        console.log('Typescript done');
+        console.log('Typescript done', "\n\n");
         return doNext(err);
     });
 });
@@ -20,7 +20,7 @@ Tasks.push((doNext) => {
         if (err) {
             return doNext(err);
         }
-        console.log(stdout);
+        console.log(stdout, "\n\n");
         doNext(err);
     });
 });
@@ -52,5 +52,5 @@ Async.waterfall(Tasks, (err) => {
     if (err) {
         throw err;
     }
-    console.log('All tasks done');
+    console.log('All tasks done', "\n\n");
 });
