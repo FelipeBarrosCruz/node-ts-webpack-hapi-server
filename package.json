@@ -2,17 +2,36 @@
   "name": "node-typescript-backend-project",
   "version": "1.0.0",
   "description": "Node Backend based on TS and WebPack minimize",
+  "engines": {
+    "node": ">=5.0.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node index.js",
     "test": "./node_modules/.bin/mocha tests --timeout 360000 --reporter spec",
     "build": "node ./bin/build.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeBarrosCruz/node-ts-webpack-hapi-server.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "webpack",
+    "backend"
+  ],
+  "bugs": {
+    "url": "https://github.com/FelipeBarrosCruz/node-ts-webpack-hapi-server/issues"
+  },
+  "homepage": "https://github.com/FelipeBarrosCruz/node-ts-webpack-hapi-server#readme",
   "author": "FelipeBarrosCruz<felipe.barros.pt@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "apidoc": "^0.16.1",
     "async": "^2.0.0",
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "pm2": "^2.0.12"
   },
   "dependencies": {
     "hapi": "^15.0.3"
