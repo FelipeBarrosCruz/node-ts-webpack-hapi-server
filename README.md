@@ -1,4 +1,4 @@
-# Node TS Webpack project
+# NodeJS and Hapi Server based on Typescript and Webpack
 
 
 ##
